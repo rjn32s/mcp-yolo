@@ -6,7 +6,7 @@ LABEL "mcp-name"="io.github.rjn32s/mcp-yolo"
 
 # Install system dependencies for OpenCV and Ultralytics
 RUN apt-get update && apt-get install -y \
-    libgl1-mesa-glx \
+    libgl1 \
     libglib2.0-0 \
     git \
     && rm -rf /var/lib/apt/lists/*
