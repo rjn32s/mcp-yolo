@@ -1,5 +1,8 @@
-# Use a specialized PyTorch image or a standard Python image
-FROM python:3.14-slim
+# Use a stable Python image
+FROM python:3.12-slim
+
+# Add MCP Metadata Label
+LABEL "mcp-name"="io.github.rjn32s/mcp-yolo"
 
 # Install system dependencies for OpenCV and Ultralytics
 RUN apt-get update && apt-get install -y \
@@ -20,6 +23,5 @@ COPY . .
 # Install dependencies and the package
 RUN uv sync --frozen
 
-# Expose the MCP port if applicable (FastMCP usually uses stdio)
-# ENTRYPOINT ["uv", "run", "mcp-yolo"]
+# CMD runs the server via stdio
 CMD ["uv", "run", "mcp-yolo"]
