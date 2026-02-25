@@ -6,5 +6,8 @@ dist/
 wheels/
 *.egg-info
 
+# Large model weights
+*.pt
+
 # Virtual environments
 .venv
