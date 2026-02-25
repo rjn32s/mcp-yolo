@@ -9,5 +9,11 @@ wheels/
 # Large model weights
 *.pt
 
+# Large model weights
+*.pt
+
+# Registry Token
+.mcpregistry_github_token
+
 # Virtual environments
 .venv
