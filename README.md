@@ -1,4 +1,6 @@
 # MCP-YOLO
+[![PyPI](https://img.shields.io/pypi/v/mcp-yolo)](https://pypi.org/project/mcp-yolo/)
+[![Downloads](https://static.pepy.tech/personalized-badge/mcp-yolo?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads)](https://pepy.tech/project/mcp-yolo)
 mcp-name: io.github.rjn32s/mcp-yolo
 
 MCP-YOLO is an agent-first development platform that provides **Zero-Shot Object Detection and Segmentation** as a Model Context Protocol (MCP) server. Powered by **Ultralytics YOLOE**, it enables developers and AI agents to detect and segment objects using arbitrary text prompts without retraining.
